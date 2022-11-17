@@ -29,7 +29,7 @@ export default function LessonCard({ item }) {
         </div>
 
         <div className="lesson-option">
-          <Button onClick={(e) => {e.stopPropagation(); setComplete(!complete);}} title={"Complete"}/>
+          <Button onClick={(e) => {e.stopPropagation(); setComplete(!complete);}} title={!complete ?"Complete" : "Remove Complete"}/>
         </div>
 
       </div>
