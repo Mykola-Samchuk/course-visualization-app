@@ -6,7 +6,7 @@ import "./lesson-card.css";
 import logo from "./img/logo.png";
 
 export default function LessonCard({ item }) {
-  // modal open / close
+  // modal close / open
   const [modalActive, setModalActive] = useState();
 
   // complete add / remove
@@ -21,6 +21,7 @@ export default function LessonCard({ item }) {
         </div>
         <div className="title-wrapp">
           <div className="title">
+            
             <h3>{item.title}</h3>
           </div>
           <div className="type">
